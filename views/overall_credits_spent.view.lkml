@@ -21,7 +21,7 @@ view: overall_credits_spent {
     sql: ${TABLE}."YEAR" ;;
   }
 
-######################each credit cost 3.42 dollars as per our contract################################
+  ####################################as per contract - it costs us 3.42 dollars per credit####################################
   dimension: cs_cost {
     type: number
     sql: ${cs_credits_used}*2.62 ;;
@@ -31,23 +31,19 @@ view: overall_credits_spent {
     type: number
     sql: ${otd_credits_used}*2.62 ;;
   }
-######################each credit cost 3.42 dollars as per our contract################################
-  measure: count {
-    type: count
-    drill_fields: []
-  }
 
   measure: sum_cs_cost {
     type: sum
     sql: ${cs_cost} ;;
-    }
+  }
 
   measure: sum_otd_cost {
     type: sum
     sql: ${otd_cost} ;;
   }
-
-
-
-
+ ####################################as per contract - it costs us 3.42 dollars per credit####################################
+  measure: count {
+    type: count
+    drill_fields: []
   }
+}
