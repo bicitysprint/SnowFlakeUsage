@@ -41,7 +41,7 @@ view: overall_credits_spent {
     type: sum
     sql: ${otd_cost} ;;
   }
- ####################################as per contract - it costs us 3.42 dollars per credit####################################
+  ####################################as per contract - it costs us 3.42 dollars per credit####################################
   measure: count {
     type: count
     drill_fields: []
