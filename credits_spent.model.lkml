@@ -19,6 +19,6 @@ datagroup: system_credits_datagroup {
 persist_with: system_credits_datagroup
 
 explore: overall_credits_spent {
-  view_label: "System Cost"
+  label: "System Cost"
 
 }
